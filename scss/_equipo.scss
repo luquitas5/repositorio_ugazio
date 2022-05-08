@@ -1,0 +1,107 @@
+.team__mainContainer {
+    
+    .main__tarjetasContainer { display: flex;
+                                flex-direction: column;
+                                align-content: center;
+                                align-items: center;
+                                margin-top: 2rem;
+        .team__tarjetas { display: inline-grid;
+                          grid-template-rows: 200px 50px 250px;
+                          padding: 1rem;
+                          justify-items: center;
+                          width: 250px;
+                          margin: 1rem;
+            .team__tarjetas--img{ width: 200px;
+
+            }
+            .team__tarjetas--h2 { text-align: center;
+                                  font-family: 'Open Sans';
+
+            }
+            .team__tarjetas--p { text-align: center; 
+                                 font-family: 'Montserrat';
+
+            }
+
+        }
+    }
+}
+.team__h1 { font-family: 'Anton';
+    font-size: 40px;
+    margin-left: 1rem;
+
+}
+@media screen and (min-width: 480px) {
+
+    .team__mainContainer {
+        .main__tarjetasContainer {
+            .team__tarjetas {width: 400px;
+                
+                .team__tarjetas--p{
+                    font-size: larger;
+                }
+            }
+        }
+    }
+}
+/* En 600x800 va bien*/
+@media screen and (min-width: 1024px) {
+    .team__mainContainer { margin-bottom: 2rem;
+        .main__tarjetasContainer { flex-direction: row;
+
+            .team__tarjetas { width: 250px;
+                .team__tarjetas--p {
+                    font-size: medium;
+                }
+                .team__tarjetas--img {
+                    width: 150px;
+                }
+                .team__tarjetas--h2 {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+    .team__h1 { font-family: 'Anton';
+        font-size: 50px;
+        margin-left: 2rem;
+}
+}
+/* 1024 x 768 */    
+@media screen and (min-width: 1024px){
+    .team__mainContainer {
+        .main__tarjetasContainer { justify-content: center;
+
+        }
+    }
+}
+/* 1024 x 900 */
+@media screen and (min-width: 1200px) {
+    .team__mainContainer { display: flex;
+                            justify-content: center;
+        .main__tarjetasContainer{ justify-content: space-around;
+                                  width: 85%;
+
+        }
+    }
+}
+/* 1920 x 1080 */
+@media screen and  (min-width:1920px) {
+    .team__h1 { font-family: 'Anton';
+        font-size: 70px;
+        margin-left: 3rem;
+}
+    .team__mainContainer {
+        padding-bottom: 10rem;
+        .main__tarjetasContainer {
+            .team__tarjetas { width: 300px;
+                .team__tarjetas--p {
+                    font-size: 21px;
+                }
+                .team__tarjetas--h2 {
+                    font-size: 34px;
+                }
+            }
+        }
+    }
+}

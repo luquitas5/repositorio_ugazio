@@ -1,0 +1,30 @@
+header {
+        .navbar {
+                 .container-fluid {
+                                   .navbar-brand{ 
+                                                 .logo {
+                                                     width: 180px;
+                                                     margin-left: 40px;
+
+                                                 }
+                                                }
+
+                                     }
+                 .nav__div{display: flex;
+                           justify-content: space-around;
+                            .nav__div--ul{ display: flex;
+                                            justify-content: space-evenly;
+                                            width: 100%;
+                                            padding: 10px 50px;
+                                            .nav-item {
+                                                      .nav-link{ font-family: 'Open Sans';
+                                                                 color: $azul;
+                                                                 font-size: 18px;
+
+
+                                                      }
+                                                      }
+                                         }
+                          }
+                }
+}

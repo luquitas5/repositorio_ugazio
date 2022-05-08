@@ -1,0 +1,26 @@
+footer { 
+        width: 100%;
+        
+    .footer__container { display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        justify-self: center;
+        .footer__icon {
+            width: 2rem;
+            margin: 1rem;
+        }
+    }
+    #footer__p {
+        font-family: 'Open Sans';
+        font-size: small;
+        text-align: center;
+    }
+}
+
+/* @media screen and (min-width: 1024px) {
+    footer {
+        position: absolute;
+        bottom: 0px;
+    }
+    
+} */

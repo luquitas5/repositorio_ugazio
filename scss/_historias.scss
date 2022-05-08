@@ -1,0 +1,96 @@
+.his__mainContainer {
+    
+    .his__tarjetasContainer { display: flex;
+                             flex-direction: column;
+                             align-items: center;
+
+        .his__tarjetas { display: inline-grid;
+                         grid-template-rows: 220px 220px 50px;
+                         
+                         width: 300px;
+                         height: 500px;
+                         padding: 1rem;
+                         margin: 2rem;
+
+
+            .his__tarjetas--img {   width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    border-top-left-radius: 10px;
+                                    border-top-right-radius: 10px; 
+                                    margin-bottom: 8px;
+
+            }
+            .his__tarjetas--p { font-family: 'Montserrat';
+                                font-size: large;
+                                text-align: center;
+                                margin-bottom: 0;
+                .his__strong { font-family: 'Open Sans';
+                                font-size: larger;
+                                color: $azul;
+
+                }
+
+            }
+            .his__buttonContainer { display: flex;
+                                    flex-direction: row;
+                                    align-items: flex-start;
+                                    justify-content: center;
+                .his__btn { color: white;
+                            background-color: $azul;
+                            border-radius: 10px;
+                            text-align: center;
+                            text-decoration: none;
+                            font-family: 'Open Sans';
+                            height: 40px;
+                            padding: 10px 15px
+
+
+                }
+            }
+        }
+
+    }
+
+}
+.his__main--h1 { font-family: 'Anton';
+    font-size: 40px;
+
+}
+
+/* 1024x768 */
+@media screen and (min-width: 1024px) {
+
+    .his__mainContainer .his__tarjetasContainer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+/* 1200x900 */
+@media screen and (min-width: 1200px) {
+    .his__mainContainer {margin-bottom: 5rem;
+
+    }
+    
+}
+/* 1920x1080 */
+@media screen and (min-width: 1920px) {   
+    .his__mainContainer { display: flex;
+                         justify-content: center;
+                         margin-bottom: 12rem;
+                         margin-top: 5rem;
+
+    }
+    .his__mainContainer .his__tarjetasContainer { width: 85%;
+
+    }
+    .his__mainContainer .his__tarjetasContainer .his__tarjetas {
+        width: 400px;
+    }
+    .his__mainContainer .his__tarjetasContainer .his__tarjetas  .his__tarjetas--p {
+        font-size: larger;
+    }
+    .his__mainContainer .his__tarjetasContainer .his__tarjetas .his__strong {
+        font-size: x-large;
+    }
+}
